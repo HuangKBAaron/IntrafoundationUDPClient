@@ -1,0 +1,25 @@
+HKCR
+{
+	Intrafoundation.UDPClient.2 = s 'UDPClient Class'
+	{
+		CLSID = s '{D1FB6AA6-D120-4425-BFC6-EE79361355A7}'
+	}
+	Intrafoundation.UDPClient = s 'UDPClient Class'
+	{
+		CLSID = s '{D1FB6AA6-D120-4425-BFC6-EE79361355A7}'
+		CurVer = s 'Intrafoundation.UDPClient.2'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D1FB6AA6-D120-4425-BFC6-EE79361355A7} = s 'UDPClient Class'
+		{
+			ProgID = s 'Intrafoundation.UDPClient.2'
+			VersionIndependentProgID = s 'Intrafoundation.UDPClient'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}

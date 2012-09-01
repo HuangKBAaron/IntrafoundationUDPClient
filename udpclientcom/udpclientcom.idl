@@ -1,0 +1,101 @@
+// udpclientcom.idl : IDL source for udpclientcom.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (udpclientcom.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+	[
+		object,
+		uuid(F3244CB4-25BB-4909-B3FA-E547BFDF6779),
+		dual,
+		helpstring("IUDPClient Interface"),
+		pointer_default(unique)
+	]
+	interface IUDPClient : IDispatch
+	{
+		[propget, id(1), helpstring("property thread")] HRESULT thread([out, retval] long* pVal);
+		[propget, id(2), helpstring("property version")] HRESULT version([out, retval] BSTR* pstr);
+		[propget, id(3), helpstring("property copyright")] HRESULT copyright([out, retval] BSTR* pstr);
+		[propget, id(4), helpstring("property description")] HRESULT description([out, retval] BSTR* pstr);
+		[propget, id(5), helpstring("property instance")] HRESULT instance([out, retval] long* pVal);
+		[propget, id(6), helpstring("property instances")] HRESULT instances([out, retval] long* pVal);
+		[propget, id(7), helpstring("property Log")] HRESULT Log([out, retval] BSTR* pstrText);
+		[id(8), helpstring("method ClearLog")] HRESULT ClearLog();
+
+		[id(10), helpstring("method Open")] HRESULT Open([in] BSTR strip, [in] BSTR strport, [out, retval] long* bconnected);
+		[id(11), helpstring("method Close")] HRESULT Close();
+		[id(12), helpstring("method Send")] HRESULT Send([in] BSTR strText, [out, retval] long* bytes);
+		[id(13), helpstring("method Recv")] HRESULT Recv([out, retval] BSTR* pstrText );
+		[id(14), helpstring("method SendCSV")] HRESULT SendCSV([in] BSTR strText, [out, retval] long* bytes);
+		[id(15), helpstring("method RecvCSV")] HRESULT RecvCSV([out, retval] BSTR* pstrText);
+
+		[propput, id(16), helpstring("property timeout")] HRESULT timeout([in] double seconds);
+		[propget, id(16), helpstring("property timeout")] HRESULT timeout([out, retval] double* pseconds);
+
+		[propget, id(17), helpstring("property sendlength")] HRESULT sendlength([out, retval] long* pbytes);
+		[propget, id(18), helpstring("property recvlength")] HRESULT recvlength([out, retval] long* pbytes);
+		[propget, id(19), helpstring("property buffersize")] HRESULT buffersize([out, retval] long* pbytes);
+		[propget, id(20), helpstring("property messagelength")] HRESULT messagelength([out, retval] long* pbytes);
+		
+		[propget, id(21), helpstring("property bytessent")] HRESULT bytessent([out, retval] long* pVal);
+		[propget, id(22), helpstring("property bytesreceived")] HRESULT bytesreceived([out, retval] long* pVal);
+		[propget, id(23), helpstring("property localaddress")] HRESULT localaddress([out, retval] BSTR* pstr);
+		[propget, id(24), helpstring("property remoteaddress")] HRESULT remoteaddress([out, retval] BSTR* pstr);
+		[propget, id(25), helpstring("property udpsocket")] HRESULT udpsocket([out, retval] long* pVal);
+		[propget, id(26), helpstring("property kbpssending")] HRESULT kbpssending([out, retval] double* pVal);
+		[propget, id(27), helpstring("property kbpsreceiving")] HRESULT kbpsreceiving([out, retval] double* pVal);
+		
+		[propget, id(28), helpstring("property senttimeout")] HRESULT senttimeout([out, retval] double* pVal);
+		[propget, id(29), helpstring("property receivedtimeout")] HRESULT receivedtimeout([out, retval] double* pVal);
+		
+		[propget, id(30), helpstring("property ping")] HRESULT ping([out, retval] long* pVal);
+
+		[id(31), helpstring("method SendPacket")] HRESULT SendPacket([out, retval] long* bytes);
+		[id(32), helpstring("method RecvPacket")] HRESULT RecvPacket([out, retval] long* bytes);
+		[id(33), helpstring("method packetclear")] HRESULT packetclear();
+		
+		[propget, id(34), helpstring("property packetlength")] HRESULT packetlength([out, retval] long* bytes);
+		[propget, id(35), helpstring("property packetposition")] HRESULT packetposition([out, retval] long* bytes);
+		[propput, id(36), helpstring("property packetreposition")] HRESULT packetreposition([in] long bytes);
+		
+		[id(37), helpstring("property addpacketnumber")] HRESULT addpacketnumber([in] BSTR strType, [in] double val);
+		[id(38), helpstring("property addpacketchar")] HRESULT addpacketchar([in] BSTR str);
+		[id(39), helpstring("property addpacketstring")] HRESULT addpacketstring([in] BSTR str);
+		
+		[id(40), helpstring("property packetchar")] HRESULT packetchar([out, retval] BSTR* pstr);
+		[id(41), helpstring("property packetstring")] HRESULT packetstring([out, retval] BSTR* pstr);
+		[id(42), helpstring("property packetnumber")] HRESULT packetnumber([in] BSTR strType, [out, retval] double* val);
+
+		[id(43), helpstring("property addpacketipport")] HRESULT addpacketipport([in] BSTR strIP, [in] int Port);
+		[id(44), helpstring("property packetipport")] HRESULT packetipport([out] BSTR* strIP, [out] int* Port);
+
+		[id(45), helpstring("property addpacketstringN")] HRESULT addpacketstringN([in] BSTR str);
+		[id(46), helpstring("property packetstringN")] HRESULT packetstringN([in] long len, [out, retval] BSTR* pstr);
+		[id(47), helpstring("property packetstringC")] HRESULT packetstringC([in] BSTR c, [out, retval] BSTR* pstr);
+
+		[propget, id(48), helpstring("property packetEOF")] HRESULT packetEOF([out, retval] long* pbool);
+
+		[propget, id(49), helpstring("property is_connected")] HRESULT is_connected([out, retval] long* status);
+	};
+[
+	uuid(0BD109F4-D22A-452E-88D9-7CF7B71AFABE),
+	version(1.0),
+	helpstring("udpclientcom 1.0 Type Library")
+]
+library UDPCLIENTCOMLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(D1FB6AA6-D120-4425-BFC6-EE79361355A7),
+		helpstring("UDPClient Class")
+	]
+	coclass UDPClient
+	{
+		[default] interface IUDPClient;
+	};
+};

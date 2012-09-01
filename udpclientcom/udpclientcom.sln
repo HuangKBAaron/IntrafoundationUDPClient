@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "udpclientcom", "udpclientcom.vcxproj", "{7EFA5304-DB1D-F82E-1C75-9BBEBE92177F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EFA5304-DB1D-F82E-1C75-9BBEBE92177F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7EFA5304-DB1D-F82E-1C75-9BBEBE92177F}.Debug|Win32.Build.0 = Debug|Win32
+		{7EFA5304-DB1D-F82E-1C75-9BBEBE92177F}.Debug|x64.ActiveCfg = Debug|x64
+		{7EFA5304-DB1D-F82E-1C75-9BBEBE92177F}.Debug|x64.Build.0 = Debug|x64
+		{7EFA5304-DB1D-F82E-1C75-9BBEBE92177F}.Release|Win32.ActiveCfg = Unicode|Win32
+		{7EFA5304-DB1D-F82E-1C75-9BBEBE92177F}.Release|Win32.Build.0 = Unicode|Win32
+		{7EFA5304-DB1D-F82E-1C75-9BBEBE92177F}.Release|x64.ActiveCfg = Unicode|x64
+		{7EFA5304-DB1D-F82E-1C75-9BBEBE92177F}.Release|x64.Build.0 = Unicode|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
