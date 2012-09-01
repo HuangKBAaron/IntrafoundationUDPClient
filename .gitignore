@@ -171,6 +171,7 @@ installer/
 *.css
 *.dll
 *.exe
+*.url
 
 Debug/
 Release/
