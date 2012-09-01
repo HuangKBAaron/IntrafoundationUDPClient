@@ -172,6 +172,7 @@ installer/
 *.dll
 *.exe
 *.url
+*.csv
 
 Debug/
 Release/
