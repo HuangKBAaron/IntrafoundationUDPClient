@@ -24,13 +24,13 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="udp.h">
+    <ClInclude Include="..\..\udpclientcom\ErrorStringWSA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Log.h">
+    <ClInclude Include="..\..\udpclientcom\Log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ErrorStringWSA.h">
+    <ClInclude Include="..\..\udpclientcom\udp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -41,13 +41,13 @@
     <ClCompile Include="test_harness.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="udp.cpp">
+    <ClCompile Include="..\..\udpclientcom\udp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ErrorStringWSA.cpp">
+    <ClCompile Include="..\..\udpclientcom\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Log.cpp">
+    <ClCompile Include="..\..\udpclientcom\ErrorStringWSA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

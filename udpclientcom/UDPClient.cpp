@@ -27,7 +27,7 @@
 const char *description = "Intrafoundation.UDPClient.2";
 const char *copyright =
 		"Copyright (c) 2000, 2001, 2003, 2004, 2012 by Lewis Sellers. <a href=\"http://www.intrafoundation.com\">http://www.intrafoundation.com</a>";
-const char *version = "2.1a, August 30th 2012";
+const char *version = "2.2, August 30th 2012";
 
 //
 int CUDPClient::m_last_instance = 0;

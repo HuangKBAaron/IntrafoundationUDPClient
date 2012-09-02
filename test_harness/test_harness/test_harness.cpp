@@ -1,30 +1,5 @@
 // test_harness.cpp : Defines the entry point for the console application.
 //
-/*
-// UDPClient.cpp : Implementation of CUDPClient
-#include "stdafx.h"
-#include "udpclientcom.h"
-#include "UDPClient.h"
-
-/////////////////////////////////////////////////////////////////////////////
-// CUDPClient
-
-// _open file handling
-#include "io.h"
-#include <fcntl.h>
-
-//bstr
-#include <comdef.h>
-
-// _stat
-#include "sys\stat.h"
-
-// wnet*
-//Header: Declared in winnetwk.h.
-//Import Library: Use mpr.lib.
-
-//
-#include "Log.h"*/
 
 #include "stdafx.h"
 
@@ -43,12 +18,8 @@
 #include <time.h>
 #include <conio.h>
 
-//
-//#include "..\..\udpclientcom\udp.h"
-
-#include "Log.h"
-//#include "ErrorStringWSA.h"
-#include "udp.h"
+#include "..\..\udpclientcom\Log.h"
+#include "..\..\udpclientcom\udp.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -56,7 +27,6 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	string strError;
 	strError="";
-
 
 	///////////////////////////////////////////////////////////////////////////
 	printf("-------------------------------------------\n");
@@ -80,8 +50,6 @@ int _tmain(int argc, _TCHAR* argv[])
 		printf(" buf - > %s\n",buf);
 		delete [] buf;
 	}
-
-
 
 
 	///////////////////////////////////////////////////////////////////////////

@@ -4,7 +4,7 @@
 
 
  /* File created by MIDL compiler version 7.00.0555 */
-/* at Sat Sep 01 12:22:17 2012
+/* at Sat Sep 01 18:38:42 2012
  */
 /* Compiler settings for udpclientcom.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 7.00.0555 

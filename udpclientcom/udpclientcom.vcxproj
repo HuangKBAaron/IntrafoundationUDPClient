@@ -610,6 +610,9 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
     <PostBuildEvent>
       <Command>..\post_build.bat</Command>
     </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>Regsvr32 /u Release\udpclientcom.dll</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode|x64'">
     <ClCompile>
@@ -661,6 +664,9 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
     <PostBuildEvent>
       <Command>..\post_build64.bat</Command>
     </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>rem Regsvr32 /u Release64\udpclientcom.dll</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinDependency|Win32'">
     <ClCompile>

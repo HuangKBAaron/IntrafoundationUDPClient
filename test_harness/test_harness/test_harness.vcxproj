@@ -135,15 +135,16 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ErrorStringWSA.h" />
-    <ClInclude Include="Log.h" />
+    <ClInclude Include="..\..\udpclientcom\ErrorStringWSA.h" />
+    <ClInclude Include="..\..\udpclientcom\Log.h" />
+    <ClInclude Include="..\..\udpclientcom\udp.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="udp.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ErrorStringWSA.cpp" />
-    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="..\..\udpclientcom\ErrorStringWSA.cpp" />
+    <ClCompile Include="..\..\udpclientcom\Log.cpp" />
+    <ClCompile Include="..\..\udpclientcom\udp.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -151,7 +152,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="test_harness.cpp" />
-    <ClCompile Include="udp.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
