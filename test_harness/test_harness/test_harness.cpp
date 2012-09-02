@@ -1,16 +1,11 @@
 // test_harness.cpp : Defines the entry point for the console application.
-//
 
 #include "stdafx.h"
-
-//#include "windows.h"
-//#include "stdio.h"
 
 // _open file handling
 #include "io.h"
 #include <fcntl.h>
 
-//#include <comdef.h> //BSTR
 #include "sys\stat.h" // _stat
 
 //
@@ -325,30 +320,6 @@ int _tmain(int argc, _TCHAR* argv[])
 		delete [] buf;
 	}
 
-
-	/*{
-	udp *w;
-	w=NULL;
-
-	printf("\n\n ** sock - > %d\n",w->udpsocket());
-
-	//
-	int lp;
-	int rp;
-	char *lip=NULL;
-	char *rip=NULL;
-	w->endpoints(&lip,lp,&rip,rp);
-	printf("[local -> %s:%d]\n",lip,lp);
-	printf("[remote -> %s:%d]\n",rip,rp);
-
-	char *buf=new char[MAX_ADDRESS];
-	memset(buf,0,MAX_ADDRESS);
-	sprintf(buf,"local -> %s:%d",lip,lp);
-	int buflength=strlen(buf);
-	printf(" buf - > %s\n",buf);
-	delete [] buf;
-	}
-	*/
 
 	printf("PRESS"); _getch();
 	return 0;
