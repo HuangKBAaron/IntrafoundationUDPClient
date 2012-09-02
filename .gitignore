@@ -167,7 +167,8 @@ installer/
 *.asp
 *.png
 *.jpg
-*.html
+index.html
+article-1.html
 *.css
 *.dll
 *.exe
