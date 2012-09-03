@@ -14,12 +14,12 @@
 </tr>
 <tr>
 	<td align=left>
-<div class=headeroptional>ATL COM Component</div>
+<div class=headeroptional><!--C# .NET and -->C++ ATL COM Component</div>
 <div class=headeroptional>FOR <a href="http://www.microsoft.com">ASP</a> and <a href="http://www.adobe.com">ColdFusion</a></div>
 	</td>
 	<td align=right>
 <div></div>
-<div><small>Open Source 64 and 32-bit C++ COM Object</small></div>
+<div><small>Open Source <!--64-bit .NET and -->64 and 32-bit C++ COM Object</small></div>
 	</td>
 </tr>
 </table>
@@ -45,7 +45,8 @@
 
 <br>
 <div style="color: #800000; font-family: Arial,serif; font-size: 80%;">
-I'm available for short and long term contract work. Need extensions of some kind crafted or an extra pair of hands for straight up web programming? <a href="http://www.intrafoundation.com/contact-us/">Contact Me</a>.
+I'm available for short and long term contract work.<br>
+Need extensions of some kind crafted or an extra pair of hands for straight up web programming? <a href="http://www.intrafoundation.com/contact-us/">Contact Me</a>.
 </div>
 	</td>
 </tr>
@@ -55,10 +56,11 @@ I'm available for short and long term contract work. Need extensions of some kin
 <div style="background-color: #f0f020; font-size: 9pt; text-align: center; margin: 1px; padding: 3px;">
 <strong>NOTICE:</strong> This software is now <b>64-bit</b>. If you need <b>32-bit</b> builds, they are located in the <tt>32bit_versions\</tt> folder.
 </div>
-
-<div style="background-color: #f08080; font-size: 9pt; text-align: center; margin: 1px; padding: 3px;">
-<b>NEW:</b> Follow the open source development of this software at <a href="https://github.com/lasellers">github.com/lasellers</a>.
+<div style="background-color: #f0f060; font-size: 9pt; text-align: center; margin: 1px; padding: 3px;">
+<b>NEW:</b> Follow the open source development of this software at <a href="https://github.com/lasellers">lasellers @ github.com</a>
+or <a href="http://www.codeplex.com/site/users/view/lasellers">lasellers @ codeplex.com</a>.
 </div>
+
 
 
 
@@ -166,14 +168,6 @@ There are install.bat and uninstall.bat files included that you can simply click
 At the command prompt type: <tt>regsvr32 /u UDPClientcom.dll</tt>.
 Or see above.
 </p>
-
-	</td>
-	<td align=right width=20% class=menu>
-
-	</td>
-</tr>
-</table>
-
 
 
 
@@ -1008,13 +1002,16 @@ Compile for 64-bit support in addition to 32-bit.
 For unknown reasons the separate <tt>classes\</tt> folder with common code between this a  few other projects was not bundled in the last uploaded version of this app. Thus, I have had to pull it from other sources. The various files were slightly out of temporal sync, thus I've had to rebuild the project more from scratch than anticipated.</p><p>
 The 2.2 version pulls some of its sources from a partial port to Macintosh OS X I did years ago but never released.</p><p>
 From now on, each project keeps it's own separate copy of any shared files.
-Especially given that it is going to be released on github.
+Especially important given that it is going to be released on github and codeplex.
 </p>
 <p><b>This version should be considered possibly unstable as it has not been extensively retested.</b></p>
+<p><b>TO DO:</b>
+Make C# COM interop .NET DLL or perhaps pinvoke a c wrapped version.
+Not interested in using C++/CLI.
+</p>
 </li>
 
 <li><b>2.1</b> November 5th 2004.
-
 <p>
 Updated the C++ classes it shares with several other projects, so recompiled.
 Cleaned up for the relaunch of the <a href="http://www.intrafoundation.com">Intrafoundation</a> web site.
